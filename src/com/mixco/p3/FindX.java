@@ -1,7 +1,4 @@
 package com.mixco.p3;
-
-import java.util.Arrays;
-
 public class FindX {
     private int[] sort(int[] arrToSort){
         int[] sortedArr = new int[arrToSort.length];

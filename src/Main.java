@@ -2,7 +2,7 @@ import com.mixco.p1.*;
 import com.mixco.p2.*;
 import com.mixco.p3.*;
 import com.mixco.p4.*;
-
+import com.mixco.p5.*;
 import java.util.Arrays;
 
 public class Main {
@@ -127,6 +127,36 @@ public class Main {
         System.out.println(" ");
         System.out.println(" ");
 
-
+        ShiftArray p5 = new ShiftArray();
+        System.out.println("Problem #5: Write a Java method that will take an array of integers of size n and shift right by m places, where n > m. You can read your inputs from a file and write your outputs to another file.");
+        System.out.println("---");
+        long start13 = System.currentTimeMillis();
+        System.out.print("In: [-6, -7, 2, 4, 16, 1] => Out: ");
+        int[] arr1 = new int[]{-6, -7, 2, 4, 16, 1};
+        int[] shArr1 = p5.shift(arr1, 2);
+        System.out.print(Arrays.toString(shArr1));
+        long stop13 = System.currentTimeMillis();
+        float delta13 = (stop13-start13)/1000F;
+        System.out.println(" Completed in: "+delta13+" seconds.");
+        System.out.println(" ");
+        long start14 = System.currentTimeMillis();
+        System.out.print("In: [2, 3, 4, 5, 7, 11, 13, 17] => Out: ");
+        int[] arr2 = new int[]{2, 3, 4, 5, 7, 11, 13, 17};
+        int[] shArr2 = p5.shift(arr2, 4);
+        System.out.print(Arrays.toString(shArr2));
+        long stop14 = System.currentTimeMillis();
+        float delta14 = (stop14-start14)/1000F;
+        System.out.println(" Completed in: "+delta14+" seconds.");
+        System.out.println(" ");
+        long start15 = System.currentTimeMillis();
+        System.out.print("In: [0, -1, -2,-8, 6] => Out: ");
+        int[] arr3 = new int[]{0, -1, -2,-8, 6};
+        int[] shArr3 = p5.shift(arr3, -1);
+        System.out.print(Arrays.toString(shArr3));
+        long stop15 = System.currentTimeMillis();
+        float delta15 = (stop15-start15)/1000F;
+        System.out.println(" Completed in: "+delta15+" seconds.");
+        System.out.println(" ");
+        System.out.println(" ");
     }
 }
